@@ -2,18 +2,18 @@
 
 /**
  * list_len - prints all the elements of a list_t list.
- * @h: singly linked list.
- * Return: number of elements in the list.
+ * @x: singly linked list.
+ * 
  */
-size_t list_len(const list_t *h)
+size_t list_len(const list_t *x)
 {
-size_t nelem;
+size_t syp;
 
-nelem = 0;
-while (h != NULL)
+syp = 0;
+while (x != NULL)
 {
-nelem++;
+syp++;
 h = h->next;
 }
-return (nelem);
+return (syp);
 }
