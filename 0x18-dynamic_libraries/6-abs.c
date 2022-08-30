@@ -1,21 +1,16 @@
 #include "main.h"
-
 /**
- * _abs - Prints the absolute value
- * of an integer.
+ *_abs - return deppend of sign of n
  *
- * @i: input number as an integer.
- *
- * Return: absolute value
+ *Return: 0
+ *@c: number for evaluate
  */
-int _abs(int i)
+int _abs(int c)
 {
-if (i >= 0)
-{
-return (i);
-}
-else
-{
-return (i * -1);
-}
+	if (c < 0)
+	{
+		return (-c);
+	}
+	else
+		return (c);
 }
